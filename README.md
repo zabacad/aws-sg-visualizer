@@ -1,0 +1,33 @@
+# AWS security group visualiser
+
+Create a Dot graph of AWS security groups (rectangular nodes), their inbound
+rules (edges), plus allowed CIDR blocks (oval nodes).
+
+Example usage:
+
+```
+./py-graph.py > security-groups.dot
+dot -Tsvg -o security-groups.svg security-groups.dot
+```
+
+You'll need AWS credentials [anywhere Boto can find them](https://boto3.readthedocs.io/en/latest/guide/configuration.html).
+
+## Requirements
+
+* [Python 3](https://www.python.org/)
+* [Boto 3](https://pypi.python.org/pypi/boto3)
+* [Graphviz Python module](https://pypi.python.org/pypi/graphviz)
+* [Graphviz](http://www.graphviz.org/) -- To render the Dot file
+
+## Shortcomings
+
+* A single VPC is assumed.
+* A single AWS account is assumed. No VPC peering.
+* Security groups with the tag `created_by` set to `puppet` are coloured blue
+and grouped in a separate `managed` subgraph. The tag value not case sensitive.
+
+## FAQ
+
+*How are you?*
+
+I'm fine. Thanks.

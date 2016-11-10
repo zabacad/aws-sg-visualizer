@@ -1,0 +1,10 @@
+# Compiled Python
+*.py[cdo]
+
+# Script output
+*.dot
+*.svg
+
+# Vim
+*~
+*.sw[op]
