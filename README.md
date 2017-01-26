@@ -17,14 +17,15 @@ You'll need AWS credentials [anywhere Boto can find them](https://boto3.readthed
 * [Python 3](https://www.python.org/)
 * [Boto 3](https://pypi.python.org/pypi/boto3)
 * [Graphviz Python module](https://pypi.python.org/pypi/graphviz)
-* [Graphviz](http://www.graphviz.org/) -- To render the Dot file
+* [Graphviz](http://www.graphviz.org/) — To render the Dot file
 
 ## Shortcomings
 
-* A single VPC is assumed.
-* A single AWS account is assumed. No VPC peering.
-* Security groups with the tag `created_by` set to `puppet` are coloured blue
+- A single VPC is assumed.
+- A single AWS account is assumed. No VPC peering.
+- Security groups with the tag `created_by` set to `puppet` are coloured blue
 and grouped in a separate `managed` subgraph. The tag value not case sensitive.
+- Only ingress rules are considered.
 
 ## FAQ
 
