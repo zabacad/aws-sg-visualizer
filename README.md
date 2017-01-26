@@ -7,7 +7,7 @@ Example usage:
 
 ```
 ./py-graph.py > security-groups.dot
-dot -Tsvg -o security-groups.svg security-groups.dot
+neato -n -Tsvg -o security-groups.svg security-groups.dot
 ```
 
 You'll need AWS credentials [anywhere Boto can find them](https://boto3.readthedocs.io/en/latest/guide/configuration.html).
