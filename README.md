@@ -6,7 +6,7 @@ rules (edges), plus allowed CIDR blocks (oval nodes).
 Example usage:
 
 ```
-./py-graph.py > security-groups.dot
+./sg-graph.py > security-groups.dot
 neato -n -Tsvg -o security-groups.svg security-groups.dot
 ```
 
