@@ -19,6 +19,18 @@ You'll need AWS credentials [anywhere Boto can find them](https://boto3.readthed
 * [Graphviz Python module](https://pypi.python.org/pypi/graphviz)
 * [Graphviz](http://www.graphviz.org/) — To render the Dot file
 
+To install Python modules:
+
+```
+pip install boto3 graphviz
+```
+
+Or:
+
+```
+pip install -r requirements.txt
+```
+
 ## Shortcomings
 
 - A single VPC is assumed.
