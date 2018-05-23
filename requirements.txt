@@ -1,8 +1,8 @@
-boto3==1.4.4
-botocore==1.5.76
-docutils==0.13.1
-graphviz==0.7.1
+boto3==1.7.26
+botocore==1.10.26
+docutils==0.14
+graphviz==0.8.3
 jmespath==0.9.3
-python-dateutil==2.6.0
-s3transfer==0.1.10
-six==1.10.0
+python-dateutil==2.7.3
+s3transfer==0.1.13
+six==1.11.0

@@ -8,3 +8,6 @@
 # Vim
 *~
 *.sw[op]
+
+# Virtualenv
+.venv
