@@ -1,4 +1,4 @@
-# AWS security group visualiser
+# AWS security group visualizer
 
 Create a Dot graph of AWS security groups (rectangular nodes), their inbound
 rules (edges), plus allowed CIDR blocks (oval nodes).
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 - A single VPC is assumed.
 - A single AWS account is assumed. No VPC peering.
-- Security groups with the tag `created_by` set to `puppet` are coloured blue
+- Security groups with the tag `created_by` set to `puppet` are colored blue
 and grouped in a separate `managed` subgraph. The tag value not case sensitive.
 - Only ingress rules are considered.
 
