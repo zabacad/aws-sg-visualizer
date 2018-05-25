@@ -6,7 +6,7 @@ rules (edges), plus allowed CIDR blocks (oval nodes).
 Example usage:
 
 ```
-./sg-graph.py > security-groups.dot
+./aws_sg_vizualizer.py -o security-groups.dot
 neato -n -Tsvg -o security-groups.svg security-groups.dot
 ```
 
@@ -43,11 +43,8 @@ pip install -r requirements.txt
 
 ## Shortcomings
 
-- A single VPC is assumed.
-- A single AWS account is assumed. No VPC peering.
-- Security groups with the tag `created_by` set to `puppet` are colored blue
-and grouped in a separate `managed` subgraph. The tag value not case sensitive.
-- Only ingress rules are considered.
+- Rules pointing outside the AWS account are ignored.
+- Egress rules are ignored.
 - The final diagram is at the mercy of the whims of Graphviz. More complex
   diagrams and small changes in Graphviz version are likely to mess things up.
 
